@@ -1,0 +1,32 @@
+.field {
+    /* border: 2px solid green; */
+    height: 80vh;
+    background-image: url(../img/fije.djpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bat {
+    transition: transform 0.3s ease-in;
+    transform-origin: top right;
+}
+
+.field:hover .bat {
+    transform: rotate(-60deg);
+}
+
+.ball {
+    width: 15%;
+    /* background-color: red; */
+    border-radius: 25px;
+    position: relative;
+    left: 680px;
+    top: 20px;
+    transition: transform 4s ease-in-out;
+}
+
+.field:hover .ball {
+    transform: translate(900px, -300px);
+
+}
